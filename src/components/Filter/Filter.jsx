@@ -24,7 +24,8 @@ const Select = styled.select`
   color: #a5a5a5;
   background-color: #232323;
   border: none;
-  height: 25px;
+  height: 30px;
+  padding-left: 8px;
   border-radius: 3px;
   -webkit-appearance: none;
   -moz-appearance: none;

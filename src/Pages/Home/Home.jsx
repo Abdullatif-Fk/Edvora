@@ -23,7 +23,7 @@ const Container = styled.div`
   display: flex;
 `;
 const Left = styled.div`
-  margin: 20px;
+  margin: 30px;
   width: 15vw;
 `;
 const Right = styled.div`

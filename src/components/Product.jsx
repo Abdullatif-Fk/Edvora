@@ -29,7 +29,7 @@ export default Product;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 220px;
   background-color: #232323;
   border-radius: 5px;
   padding: 15px;
