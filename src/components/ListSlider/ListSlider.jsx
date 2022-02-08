@@ -63,4 +63,5 @@ const ListSlider = () => {
 export default ListSlider;
 const Container = styled.div`
   margin-left: 3vw;
+  margin: 20px;
 `;

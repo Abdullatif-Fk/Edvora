@@ -17,6 +17,7 @@ function ProductsList() {
 export default ProductsList;
 const Container = styled.div`
   margin-bottom: 20px;
+  position: relative;
 `;
 const Title = styled.span`
   color: white;
@@ -25,12 +26,13 @@ const Hr = styled.hr`
   background-color: white;
   border: none;
   height: 1px;
-  /* width: 92%; */
+  position: absolute;
+  left: 0;
+  width: 96%;
 `;
 const Wrapper = styled.div`
-  width: 95vw;
-  /* padding: 10px; */
-  /* margin: auto; */
+  width: 97%;
+
   background-color: #131313;
   border-radius: 15px;
 `;
