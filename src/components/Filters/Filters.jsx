@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Filter from "../Filter/Filter";
-const Filters = () => {
+const Filters = ({ names }) => {
   return (
     <Container>
       <Title>Filters</Title>
       <Hr />
       <Wrapper>
-        <Filter name="Products" />
+        <Filter names={names} />
         <Filter name="City" />
         <Filter name="State" />
       </Wrapper>

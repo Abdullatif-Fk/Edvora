@@ -1,16 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-const Filter = ({ name, data }) => {
+const Filter = ({ names }) => {
   return (
     <Container>
       <Select>
-        <Option>{name}</Option>
-        <Option>2</Option>
-        <Option>2</Option>
-        <Option>2</Option>
-        <Option>2</Option>
-        <Option>2</Option>
-        <Option>2</Option>
+        <Option>Products</Option>
+        {names?.map((name, key) => (
+          <Option key={key}>{name}</Option>
+        ))}
       </Select>
     </Container>
   );

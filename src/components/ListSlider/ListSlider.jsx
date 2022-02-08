@@ -4,12 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Product from "../Product";
-const ListSlider = () => {
+const ListSlider = ({ products }) => {
   var settings = {
     // dots: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     // initialSlide: 0,
     className: "center",
     infinite: true,
@@ -45,6 +45,10 @@ const ListSlider = () => {
   return (
     <Container>
       <Slider {...settings}>
+        {products?.map((product, key) => (
+          <Product product={product} key={key} />
+        ))}
+        {/* <Product />
         <Product />
         <Product />
         <Product />
@@ -53,8 +57,7 @@ const ListSlider = () => {
         <Product />
         <Product />
         <Product />
-        <Product />
-        <Product />
+        <Product /> */}
       </Slider>
     </Container>
   );

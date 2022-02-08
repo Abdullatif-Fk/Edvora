@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import ListSlider from "../ListSlider/ListSlider";
 
-function ProductsList() {
+function ProductsList({ name, products }) {
   return (
     <Container>
-      <Title> Product Name</Title>
+      <Title>{name}</Title>
       <Hr />
       <Wrapper>
-        <ListSlider />
+        <ListSlider products={products} />
       </Wrapper>
     </Container>
   );
